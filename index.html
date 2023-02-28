@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="index.js"></script>
+    <script src="currency-list.js"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="main">
+        <div class="centerbox">
+            <form action="#">
+                <h1>Currency Converter</h1>
+                <div class="amount">
+                    <label>Enter Amount</label>
+                    <input type="number" maxlength="16" value="1">
+                </div>
+                <div class="dropdown-main">
+                    <div class="dropdown">
+                        <div class="dropdown-box">
+                            <label>From</label>
+                            <div class="dropdown-base" id="from-dropdown">
+                                <div class="hasCurrency">
+                                    <div class="dropdown-item-icon">
+                                        <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-large.png" />
+                                    </div>
+                                    <div class="dropdown-item-text">
+                                        <span>KRW - South Korean Won</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-base dropdown-searchbox">
+                                    <input maxlength="10" type="search" class="dropdown-item-control" placeholder="Type to search...">
+                                    <ul class="dropdown-list">
+                                        <a href="#"><li class="dropdown-item"><img src="https://www.countryflags.com/wp-content/uploads/japan-flag-png-large.png"/>JPY - Japanese Yen</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reverse-div">
+                            <button class="btn"><i class="fas fa-exchange-alt" style="color: #434396;"></i></button>
+                        </div>
+
+                        <div class="dropdown-box">
+                            <label>To</label>
+                            <div class="dropdown-base" id="to-dropdown">
+                                <div class="hasCurrency">
+                                    <div class="dropdown-item-icon">
+                                        <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-large.png" />
+                                    </div>
+                                    <div class="dropdown-item-text">
+                                        <span>KRW - South Korean Won</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-base dropdown-searchbox">
+                                    <input maxlength="10" type="search" class="dropdown-item-control" placeholder="Type to search...">
+                                    <ul class="dropdown-list">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchange-rate">
+                    <span><i class="fa-icon fa-brands fa-gg"></i>1 CNY = 1 CNY</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
